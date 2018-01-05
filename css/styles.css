@@ -382,4 +382,7 @@ a.shoplink:hover{
   .info{
     font-size: 1em;
   }
+  .centertext{
+    padding:10px 10px;
+  }
 }
