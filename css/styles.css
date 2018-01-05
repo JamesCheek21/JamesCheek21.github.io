@@ -345,9 +345,12 @@ a.shoplink:hover{
   }
   .categories{
     width:20%;
-    font-size: 0.81em;
     margin-left: 0;
     margin-right: 0;
+  }
+  .categorieslist{
+    font-size: 0.81em;
+    padding: 70px 10px;
   }
   .items{
     width:80%;
