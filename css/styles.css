@@ -334,8 +334,11 @@ a.shoplink:hover{
   .imgcontain {
     height: 400px;
   }
+  .numbertext{
+    display: none;
+  }
   .centertext{
-    padding:40px 40px;
+    padding:20px 20px;
   }
   .galleryspacer{
     display: none;
