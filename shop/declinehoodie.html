@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="icon" href="../assets/icon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/javascript.js"></script>
+        <title>Supreme</title>
+    </head>
+    <body>
+      <div class="site-container">
+        <div class="site-pusher">
+          <header class="header">
+              <a href="#" class="icon" id="icon"></a>
+              <div class="logo"><img id="logo" src="../assets/logo.png"></div>
+              <nav class="menu">
+                  <a href="../index.html">Home</a>
+                  <a href="../about.html">About</a>
+                  <a href="../gallery.html">Gallery</a>
+                  <a href="../shop.html">Shop</a>
+              </nav>
+          </header>
+          <div class="container">
+            <section class="specificitem">
+              <div class= "shopitem">
+                <div class="itemimg">
+                  <img id="hoodieBlack" src="../assets/shop/Hoodies/hoodieBlack.jpg" style="display: block;">
+                  <img id="hoodieBlue" src="../assets/shop/Hoodies/hoodieBlue.jpg" style="display: none;">
+                  <img id="hoodieGrey" src="../assets/shop/Hoodies/hoodieGrey.jpg" style="display: none;">
+                  <img id="hoodieLime" src="../assets/shop/Hoodies/hoodieLime.jpg" style="display: none;">
+                  <img id="hoodieOrange" src="../assets/shop/Hoodies/hoodieOrange.jpg" style="display: none;">
+                  <img id="hoodieRed" src="../assets/shop/Hoodies/hoodieRed.jpg" style="display: none;">
+                  <br>
+                  <br>
+                  <div class="colours">
+                    <a onclick="showHoodieBlack()" href="#">
+                    <div class="option"><img src="../assets/shop/Hoodies/hoodieBlack.jpg"></div>
+                    <a onclick="showHoodieBlue()" href="#">
+                      <div class="option"><img src="../assets/shop/Hoodies/hoodieBlue.jpg"></div>
+                    </a>
+                    <a onclick="showHoodieGrey()" href="#">
+                      <div class="option"><img src="../assets/shop/Hoodies/hoodieGrey.jpg"></div>
+                    </a>
+                    <a onclick="showHoodieLime()" href="#">
+                      <div class="option"><img src="../assets/shop/Hoodies/hoodieLime.jpg"></div>
+                    </a>
+                    <a onclick="showHoodieOrange()" href="#">
+                      <div class="option"><img src="../assets/shop/Hoodies/hoodieOrange.jpg"></div>
+                    </a>
+                    <a onclick="showHoodieRed()" href="#Red">
+                      <div class="option"><img src="../assets/shop/Hoodies/hoodieRed.jpg"></div>
+                    </a>
+                  </div>
+                </div>
+                <br>
+                <div class="text">
+                  <h1>Decline Hoodie</h1>
+                  <br>
+                  <p>Heavyweight cotton crossgrain fleece with rib gussets. Printed logo on chest and printed graphic on back. Original artwork from The Decline of Western Civilization®.</p>
+                  <br>
+                  <h4>Price: £148</h4>
+                  <br>
+                  <button class="button" onclick="addToCart()">Add To Cart</button>
+                </div>
+                <br>
+
+              </div>
+            </section>
+          </div> <!-- END container -->
+          <div class="site-cache" id="site-cache"></div>
+        </div> <!-- END site-pusher -->
+      </div> <!-- END site-container -->
+    </body>
+</html>

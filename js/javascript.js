@@ -8,9 +8,9 @@ $(document).ready(function(){
 	});
 });
 var index = 0;
-$(function(){
+/*$(function(){
 	slideshow();
-});
+});*/
 function slideshow() {
 		var i;
 		var slides = document.getElementsByClassName("slides");
@@ -61,4 +61,58 @@ function showAll()
 	document.getElementById('hoodies').style.display = "block";
 	document.getElementById('skate').style.display = "block";
 	document.getElementById('show').style.display = "none";
+}
+function showHoodieBlack()
+{
+	document.getElementById('hoodieBlack').style.display = "block";
+	document.getElementById('hoodieBlue').style.display = "none";
+	document.getElementById('hoodieGrey').style.display = "none";
+	document.getElementById('hoodieLime').style.display = "none";
+	document.getElementById('hoodieOrange').style.display = "none";
+	document.getElementById('hoodieRed').style.display = "none";
+}
+function showHoodieBlue()
+{
+	document.getElementById('hoodieBlue').style.display = "block";
+	document.getElementById('hoodieBlack').style.display = "none";
+	document.getElementById('hoodieGrey').style.display = "none";
+	document.getElementById('hoodieLime').style.display = "none";
+	document.getElementById('hoodieOrange').style.display = "none";
+	document.getElementById('hoodieRed').style.display = "none";
+}
+function showHoodieGrey()
+{
+	document.getElementById('hoodieGrey').style.display = "block";
+	document.getElementById('hoodieBlack').style.display = "none";
+	document.getElementById('hoodieBlue').style.display = "none";
+	document.getElementById('hoodieLime').style.display = "none";
+	document.getElementById('hoodieOrange').style.display = "none";
+	document.getElementById('hoodieRed').style.display = "none";
+}
+function showHoodieLime()
+{
+	document.getElementById('hoodieLime').style.display = "block";
+	document.getElementById('hoodieBlack').style.display = "none";
+	document.getElementById('hoodieBlue').style.display = "none";
+	document.getElementById('hoodieGrey').style.display = "none";
+	document.getElementById('hoodieOrange').style.display = "none";
+	document.getElementById('hoodieRed').style.display = "none";
+}
+function showHoodieOrange()
+{
+	document.getElementById('hoodieOrange').style.display = "block";
+	document.getElementById('hoodieBlack').style.display = "none";
+	document.getElementById('hoodieBlue').style.display = "none";
+	document.getElementById('hoodieGrey').style.display = "none";
+	document.getElementById('hoodieLime').style.display = "none";
+	document.getElementById('hoodieRed').style.display = "none";
+}
+function showHoodieRed()
+{
+	document.getElementById('hoodieRed').style.display = "block";
+	document.getElementById('hoodieBlack').style.display = "none";
+	document.getElementById('hoodieBlue').style.display = "none";
+	document.getElementById('hoodieGrey').style.display = "none";
+	document.getElementById('hoodieLime').style.display = "none";
+	document.getElementById('hoodieOrange').style.display = "none";
 }
