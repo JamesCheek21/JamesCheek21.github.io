@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="icon" href="assets/icon.png">
+        <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <title>Supreme</title>
+    </head>
+    <body onload="displayCart()">
+      <div class="site-container">
+        <div class="site-pusher">
+          <header class="header">
+              <a href="#" class="icon" id="icon"></a>
+              <div class="logo"><img id="logo" src="assets/logo.png"></div>
+              <nav class="navmenu">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="shop.html">Shop</a>
+              </nav>
+          </header>
+          <div class="container">
+            <section class="about">
+              <div class= "centerinfo">
+
+                <table id="cartcontent" fitColumns="true" style="width:90%;height:auto;">
+            			<thead>
+            				<tr>
+            					<th field="name" width=40%>Name</th>
+                      <th field="colour" width=25%>Colour</th>
+                      <th field="size" width=15%>Size</th>
+            					<th field="quantity" width=10% align="right">Quantity</th>
+            					<th field="price" width=10% align="right">Price</th>
+            				</tr>
+            			</thead>
+            		</table>
+                <br>
+                <p class="total">Total: £0</p>
+                <img src="assets/logo.png" style="display: block; margin: 0 auto; width: 10%;">
+
+              </div>
+            </section>
+          </div> <!-- END container -->
+          <div class="site-cache" id="site-cache"></div>
+        </div> <!-- END site-pusher -->
+      </div> <!-- END site-container -->
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="icon" href="assets/icon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <title>Supreme</title>
+    </head>
+    <body onload="customiser()">
+      <div class="site-container">
+        <div class="site-pusher">
+          <header class="header">
+              <a href="#" class="icon" id="icon"></a>
+              <div class="logo"><img id="logo" src="assets/logo.png"></div>
+              <nav class="menu">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="shop.html">Shop</a>
+              </nav>
+          </header>
+          <div class="container">
+            <section class="about">
+              <div class= "centerinfo">
+                <img src="assets/customiser/white.jpg" id='white' style="display:none;">
+                <img src="assets/customiser/black.jpg" id='black' style="display:none;">
+                <img src="assets/customiser/logo.png" style="display:none;">
+                <img src="assets/customiser/blacklogo.jpg" style="display:none;">
+
+                <canvas id="canvas"></canvas>
+                <br>
+                <select id="customcolour">
+                  <option vlaue=0>Select a Colour</option>
+                  <option value=1>White</option>
+                  <option value=2>Black</option>
+                </select>
+                <br>
+                <form id='logos' style="display: none;">
+                  <input type="radio" name="logoRadio" id="boxlogo" value=0><img src="assets/customiser/logo.png" id="boxlogo"></input>
+                  <input type="radio" name="logoRadio" id="blacklogo" value=1><img src="assets/customiser/blacklogo.jpg" id="blacklogo"></input>
+                </form>
+
+                <br>
+                <button id="finish" type="button" style="display:none;">Finish!</button>
+                <img src="assets/logo.png" style="display: block; margin: 0 auto; width: 10%;">
+            </section>
+          </div> <!-- END container -->
+          <div class="site-cache" id="site-cache"></div>
+        </div> <!-- END site-pusher -->
+      </div> <!-- END site-container -->
+    </body>
+</html>

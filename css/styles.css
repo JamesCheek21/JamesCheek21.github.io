@@ -52,6 +52,13 @@ a {
   background-color: #ff0000;
   font-size:1.25em;
 }
+.cart{
+  float: right;
+  padding-right: 20px;
+}
+.cart a:hover{
+  color:#ffaaaa;
+}
 .logo{
   height: 66px;
   float: left;
@@ -68,6 +75,15 @@ a {
   padding: 0 10px;
 }
 .menu a:hover{
+  color: #f0f0f0;
+}
+.navmenu {
+  float: left;
+}
+.navmenu a {
+  padding: 0 10px;
+}
+.navmenu a:hover{
   color: #f0f0f0;
 }
 
@@ -283,6 +299,30 @@ a.shoplink:hover{
   float: right;
   padding: 60px 0px;
 }
+#sizes{
+   border-radius: 2px;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 10px 10px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   float: left;
+}
+#colours{
+   border-radius: 2px;
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 10px 10px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   float: left;
+}
 /*about page*/
 .about{
   padding: 10px 10px;
@@ -370,6 +410,26 @@ a.shoplink:hover{
     line-height: 40px;
     border-bottom: 1px solid #ff0000;
   }
+  .navmenu {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #e60000;
+    /*    overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;*/
+    width: 250px;
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+  }
+  .navmenu a {
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid #ff0000;
+  }
   .logo{
     float: left;
   }
@@ -433,6 +493,32 @@ a.shoplink:hover{
   }
   .centerinfo{
     padding:20px 20px;
+
+  }
+  .shopitem{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px 20px;
+    height: 100vh;
+  }
+  .itemimg{
+    width: 100%;
+  }
+  .text{
+    width: 100%;
+    padding: 0px;
+  }
+  .text br{
+    display: none;
+  }
+  .button{
+    width: 60%;
+  }
+  #sizes{
+    width: 10%;
+  }
+  #colours{
+    width:10%;
   }
 }
 @media (max-width: 600px) {
@@ -447,8 +533,10 @@ a.shoplink:hover{
   }
   .centertext{
     padding:10px 10px;
+    font-size: 0.9em;
   }
   .centerinfo{
     padding:10px 10px;
+    font-size: 0.9em;
   }
 }

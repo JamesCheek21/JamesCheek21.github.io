@@ -357,3 +357,150 @@ function showTshirtWhite(){
 	document.getElementById('tshirtWhite').style.display = "block";
 	document.getElementById('tshirtBlack').style.display = "none";
 }
+
+
+var data = {"total":0,"rows":[]};
+		var totalCost = 0;
+
+		$(function(){
+			//grid
+			$('#cartcontent').datagrid({
+				singleSelect:true
+			});
+
+		});
+		var name;
+		var price;
+		var size;
+		var sizeText;
+		var colour;
+		var chosenColour;
+		function setSizes(name, price){
+			var Name = name;
+			var Price = price;
+			size = document.getElementById("sizes");
+			sizeText = size.options[size.selectedIndex].text;
+			if(sizeText == "Size")
+			{
+				alert("Please enter a size!");
+				return false;
+			}
+			setColor();
+			//alert(color);
+			//alert(chosenColour);
+			addToCart(Name, Price, sizeText,chosenColour);
+		}
+		function setColor()
+		{
+			colour = document.getElementById("colours");
+			chosenColour = colour.options[colour.selectedIndex].text;
+		}
+
+		console.log();
+		function addToCart(name, price, size, colour){
+			function add(){
+				for(var i=0; i<data.total; i++){
+					var row = data.rows[i];
+					if(row.size == size)
+					{
+						if(row.colour == colour)
+						{
+							row.quantity += 1;
+							return;
+						}
+					}
+				}
+				data.total += 1;
+				data.rows.push({
+					//name of field:variable
+					name:name,
+					colour:colour,
+					size:size,
+					quantity:1,
+					price:price
+				});
+			}
+
+
+			add();
+
+			totalCost += price;
+			//load data grid from jquery ui
+			$('#cartcontent').datagrid('loadData', data);
+			//update totals in the html
+			$('p.total').html('Total: £'+totalCost);
+			// add to local storage
+			//stringify js array object into json and log it
+
+			localStorage.setItem('cart',JSON.stringify(data));
+			console.log(data);
+		//set local storage value to teh new json string
+		}
+		function displayCart(){
+			if(localStorage && localStorage.getItem('cart')){
+				console.log(localStorage.getItem('cart'));
+				// console log localStorage.getItem('cart') value, you will see a long json string
+				// parse json from stting into an array object
+  			data=JSON.parse(localStorage.getItem('cart'));//change this
+				console.log(data);
+				$('#cartcontent').datagrid('loadData', data);
+				for(var i=0; i<data.total; i++){
+					var row = data.rows[i];
+					totalCost += (row.price * row.quantity);
+				}
+				$('p.total').html('Total: £'+totalCost);
+							///update  .total html() or text()
+
+				}
+		}
+
+
+var canvas;
+var ctx;
+function customiser(){
+	canvas = document.getElementById('canvas');
+	ctx = canvas.getContext('2d');
+
+	var white = new Image();
+	white.src="assets/customiser/white.jpg";
+	var black = new Image();
+	black.src="assets/customiser/black.jpg";
+	var boxlogo = new Image();
+	boxlogo.src="assets/customiser/logo.png";
+	var blacklogo = new Image();
+	blacklogo.src="assets/customiser/blacklogo.jpg";
+
+	canvas.width = white.width;
+	canvas.height = white.height;
+
+	//var black = document.getElementById("black");
+	ctx.clearRect(0,0,525,500);
+
+	$('#customcolour').on('change',function (){
+		var ctmclr = document.getElementById('customcolour');
+		var customColour = ctmclr.options[ctmclr.selectedIndex].text;
+
+		if(customColour=="White")
+		{
+			ctx.drawImage(white,0,0);
+		}
+		if(customColour=="Black")
+		{
+			ctx.drawImage(black,0,0)
+		}
+		var logoselect = document.getElementById('logos').style.display="block";
+  });
+	$('input[type="radio"]').on('click',function(){
+		var value =$(this).val();
+
+		if(value==0)
+		{
+			ctx.drawImage(boxlogo, 200, 120);
+		}
+		if(value==1)
+		{
+			ctx.drawImage(blacklogo, 200, 120);
+		}
+		var finished = document.getElementById('finish').style.display = "block";
+	});
+}
