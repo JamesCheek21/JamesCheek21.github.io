@@ -253,6 +253,9 @@ a.shoplink:hover{
   font-size: 1.7em;
   list-style-type: none;
 }
+.categorieslist li{
+  padding: 10px 0px;
+}
 .clearfix:after {
     content: "";
     display: table;
