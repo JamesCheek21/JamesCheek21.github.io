@@ -330,6 +330,7 @@ a.shoplink:hover{
   text-overflow: ellipsis;
   float: left;
 }
+
 /*about page*/
 .about{
   padding: 10px 10px;
@@ -342,6 +343,31 @@ a.shoplink:hover{
   width: 80%;
   margin: 0 auto;
   background-color: #ffffff;
+}
+/*customiser*/
+#canvas{
+  float: left;
+  border: 2px solid #f0f0f0;
+}
+#logos{
+  float: left;
+}
+#customcolour{
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  margin: 10px 10px;
+  overflow: hidden;
+  padding: 5px 10px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  float: left;
+}
+.customiser{
+  height: 500px;
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 898px) {
@@ -533,6 +559,9 @@ a.shoplink:hover{
   #colours{
     width:10%;
   }
+  .customiser{
+    height: 100vh;
+  }
 }
 @media (max-width: 600px) {
   .slidesimg {
@@ -551,5 +580,10 @@ a.shoplink:hover{
   .centerinfo{
     padding:10px 10px;
     font-size: 0.9em;
+  }
+  #white{
+    width: 300px;
+    height: auto;
+
   }
 }

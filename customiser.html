@@ -29,25 +29,35 @@
               <div class= "centerinfo">
                 <img src="assets/customiser/white.jpg" id='white' style="display:none;">
                 <img src="assets/customiser/black.jpg" id='black' style="display:none;">
+                <img src="assets/customiser/red.jpg" id='red' style="display:none;">
+                <img src="assets/customiser/blue.jpg" id='blue' style="display:none;">
+                <img src="assets/customiser/green.jpg" id='green' style="display:none;">
                 <img src="assets/customiser/logo.png" style="display:none;">
                 <img src="assets/customiser/blacklogo.jpg" style="display:none;">
-
-                <canvas id="canvas"></canvas>
-                <br>
-                <select id="customcolour">
-                  <option vlaue=0>Select a Colour</option>
-                  <option value=1>White</option>
-                  <option value=2>Black</option>
-                </select>
-                <br>
-                <form id='logos' style="display: none;">
-                  <input type="radio" name="logoRadio" id="boxlogo" value=0><img src="assets/customiser/logo.png" id="boxlogo"></input>
-                  <input type="radio" name="logoRadio" id="blacklogo" value=1><img src="assets/customiser/blacklogo.jpg" id="blacklogo"></input>
-                </form>
-
-                <br>
-                <button id="finish" type="button" style="display:none;">Finish!</button>
-                <img src="assets/logo.png" style="display: block; margin: 0 auto; width: 10%;">
+                <img src="assets/customiser/americanlogo.jpg" style="display:none;">
+                <img src="assets/customiser/japanlogo.jpg" style="display:none;">
+                <img src="assets/customiser/camologo.jpg" style="display:none;">
+                <div class="customiser">
+                  <canvas id="canvas"></canvas>
+                  <br>
+                  <select id="customcolour">
+                    <option value=0>Select a Colour</option>
+                    <option value=1>White</option>
+                    <option value=2>Black</option>
+                    <option value=3>Red</option>
+                    <option value=4>Blue</option>
+                    <option value=5>Green</option>
+                  </select>
+                  <br>
+                  <form id='logos' style="display: none;">
+                    <input type="radio" name="logoRadio" id="boxlogo" value=0><img src="assets/customiser/logo.png" id="boxlogo"></input>
+                    <input type="radio" name="logoRadio" id="blacklogo" value=1><img src="assets/customiser/blacklogo.jpg" id="blacklogo"></input>
+                    <input type="radio" name="logoRadio" id="subwaylogo" value=2><img src="assets/customiser/subwaylogo.png" id="subwaylogo"></input>
+                    <input type="radio" name="logoRadio" id="americanlogo" value=3><img src="assets/customiser/americanlogo.jpg" id="americanlogo"></input>
+                    <input type="radio" name="logoRadio" id="japanlogo" value=4><img src="assets/customiser/japanlogo.jpg" id="japanlogo"></input>
+                    <input type="radio" name="logoRadio" id="camologo" value=5><img src="assets/customiser/camologo.jpg" id="camologo"></input>
+                  </form>
+                </div>
             </section>
           </div> <!-- END container -->
           <div class="site-cache" id="site-cache"></div>

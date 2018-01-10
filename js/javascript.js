@@ -465,10 +465,25 @@ function customiser(){
 	white.src="assets/customiser/white.jpg";
 	var black = new Image();
 	black.src="assets/customiser/black.jpg";
+	var red = new Image();
+	red.src="assets/customiser/red.jpg";
+	var blue = new Image();
+	blue.src="assets/customiser/blue.jpg";
+	var green = new Image();
+	green.src="assets/customiser/green.jpg";
 	var boxlogo = new Image();
 	boxlogo.src="assets/customiser/logo.png";
 	var blacklogo = new Image();
 	blacklogo.src="assets/customiser/blacklogo.jpg";
+	var subway = new Image();
+	subway.src="assets/customiser/subwaylogo.png";
+	var americanlogo = new Image();
+	americanlogo.src="assets/customiser/americanlogo.jpg";
+	var japanlogo = new Image();
+	japanlogo.src="assets/customiser/japanlogo.jpg";
+	var camologo = new Image();
+	camologo.src="assets/customiser/camologo.jpg";
+
 
 	canvas.width = white.width;
 	canvas.height = white.height;
@@ -486,7 +501,19 @@ function customiser(){
 		}
 		if(customColour=="Black")
 		{
-			ctx.drawImage(black,0,0)
+			ctx.drawImage(black,0,0);
+		}
+		if(customColour=="Red")
+		{
+			ctx.drawImage(red,0,0);
+		}
+		if(customColour=="Blue")
+		{
+			ctx.drawImage(blue,0,0);
+		}
+		if(customColour=="Green")
+		{
+			ctx.drawImage(green,0,0);
 		}
 		var logoselect = document.getElementById('logos').style.display="block";
   });
@@ -500,6 +527,22 @@ function customiser(){
 		if(value==1)
 		{
 			ctx.drawImage(blacklogo, 200, 120);
+		}
+		if(value==2)
+		{
+			ctx.drawImage(subway, 200, 120);
+		}
+		if(value==3)
+		{
+			ctx.drawImage(americanlogo, 200, 120);
+		}
+		if(value==4)
+		{
+			ctx.drawImage(japanlogo, 200, 120);
+		}
+		if(value==5)
+		{
+			ctx.drawImage(camologo, 200, 120);
 		}
 		var finished = document.getElementById('finish').style.display = "block";
 	});
