@@ -241,7 +241,7 @@ a.shoplink:hover{
 .itemdesc {
     padding: 6px;
     text-align: center;
-
+    font-size: 0.9em;
 }
 .shopresponsive {
     padding: 3px 3px;
