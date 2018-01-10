@@ -301,6 +301,7 @@ a.shoplink:hover{
 }
 #sizes{
    border-radius: 2px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
    border: 1px solid #AAA;
    color: #555;
@@ -308,20 +309,23 @@ a.shoplink:hover{
    margin: 10px 10px;
    overflow: hidden;
    padding: 5px 10px;
+   -o-text-overflow: ellipsis;
    text-overflow: ellipsis;
    float: left;
 }
 #colours{
-   border-radius: 2px;
-   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-   border: 1px solid #AAA;
-   color: #555;
-   font-size: inherit;
-   margin: 10px 10px;
-   overflow: hidden;
-   padding: 5px 10px;
-   text-overflow: ellipsis;
-   float: left;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  margin: 10px 10px;
+  overflow: hidden;
+  padding: 5px 10px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  float: left;
 }
 /*about page*/
 .about{
@@ -349,8 +353,10 @@ a.shoplink:hover{
 
   .site-pusher {
     -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
     transform: translateX(0px);
   }
 
@@ -387,6 +393,7 @@ a.shoplink:hover{
     height: 0;
     top: 16px;
     left: 15px;
+    -webkit-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
     box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
   }
 
@@ -401,6 +408,7 @@ a.shoplink:hover{
         -webkit-overflow-scrolling: touch;*/
     width: 250px;
     -webkit-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
     transform: translateX(-250px);
   }
   .menu a {
@@ -421,6 +429,7 @@ a.shoplink:hover{
         -webkit-overflow-scrolling: touch;*/
     width: 250px;
     -webkit-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
     transform: translateX(-250px);
   }
   .navmenu a {
@@ -435,6 +444,7 @@ a.shoplink:hover{
   }
   .with--sidebar .site-pusher {
     -webkit-transform: translateX(250px);
+    -ms-transform: translateX(250px);
     transform: translateX(250px);
   }
   .with--sidebar .site-cache {

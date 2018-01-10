@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="utf-8"/>
         <link rel="stylesheet" href="../css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="icon" href="../assets/icon.png">
         <link rel="stylesheet" type="text/css" href="https://www.jeasyui.com/easyui/themes/default/easyui.css">
         <link rel="stylesheet" type="text/css" href="https://www.jeasyui.com/easyui/themes/icon.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -30,17 +32,39 @@
             <section class="specificitem">
               <div class= "shopitem">
                 <div class="itemimg">
-                  <img src="../assets/shop/Skate/trucks.jpg" style="display: block;">
+                  <img id="boxersBlack" src="../assets/shop/Accessories/boxersBlack.jpg" style="display: block;">
+                  <img id="boxersWhite" src="../assets/shop/Accessories/boxersWhite.jpg" style="display: none;">
+                  <br>
+                  <br>
+                  <div class="colours">
+                    <a onclick="showBoxersBlack()" href="#">
+                      <div class="option"><img src="../assets/shop/Accessories/boxersBlack.jpg"></div>
+                    </a>
+                    <a onclick="showBoxersWhite()" href="#">
+                      <div class="option"><img src="../assets/shop/Accessories/boxersWhite.jpg"></div>
+                    </a>
+                  </div>
                 </div>
                 <br>
                 <div class="text">
-                  <h1>Supreme®/Independe﻿nt﻿® Tru﻿ck</h1>
+                  <h1>Sup﻿reme﻿®/Hanes﻿® Boxer Br﻿iefs</h1>
                   <br>
-                  <p>Classic Independent® truck with custom Supreme art. Made exclusively for Supreme.</p>
+                  <p>All cotton classic Hanes® boxer brief</p>
                   <br>
-                  <h4>Price: £52</h4>
+                  <h4>Price: £32</h4>
                   <br>
-                  <button class="button" onclick="addToCart('Supreme®/Independe﻿nt﻿® Tru﻿ck',52)">Add To Cart</button>
+                  <select id = "colours" onchange="setColor()">
+                    <option value=0>Black</option>
+                    <option value=1>White</option>
+                  </select>
+                  <select id = "sizes">
+                    <option value=0>Size</option>
+                    <option value=1>Small</option>
+                    <option value=2>Medium</option>
+                    <option value=3>Large</option>
+                    <option value=4>XLarge</option>
+                  </select>
+                  <button class="button" onclick="setSizes('Supreme®/﻿Hanes®﻿ Boxer Briefs',32)">Add To Cart</button>
                 </div>
                 <br>
 

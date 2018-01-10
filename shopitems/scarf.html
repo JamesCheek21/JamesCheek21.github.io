@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="utf-8"/>
         <link rel="stylesheet" href="../css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="icon" href="../assets/icon.png">
@@ -31,43 +32,42 @@
             <section class="specificitem">
               <div class= "shopitem">
                 <div class="itemimg">
-                  <img id="wheelsGold" src="../assets/shop/Skate/wheelsGold.jpg" style="display: block;">
-                  <img id="wheelsRed" src="../assets/shop/Skate/wheelsRed.jpg" style="display: none;">
-                  <img id="wheelsWhite" src="../assets/shop/Skate/wheelsWhite.jpg" style="display: none;">
+                  <img id="scarfBlack" src="../assets/shop/Accessories/scarfBlack.jpg" style="display: block;">
+                  <img id="scarfNavy" src="../assets/shop/Accessories/scarfNavy.jpg" style="display: none;">
+                  <img id="scarfPink" src="../assets/shop/Accessories/scarfPink.jpg" style="display: none;">
+                  <img id="scarfRed" src="../assets/shop/Accessories/scarfRed.jpg" style="display: none;">
                   <br>
                   <br>
                   <div class="colours">
-                    <a onclick="showWheelsGold()" href="#">
-                      <div class="option"><img src="../assets/shop/Skate/wheelsGold.jpg"></div>
+                    <a onclick="showScarfBlack()" href="#">
+                      <div class="option"><img src="../assets/shop/Accessories/scarfBlack.jpg"></div>
                     </a>
-                    <a onclick="showWheelsRed()" href="#">
-                      <div class="option"><img src="../assets/shop/Skate/wheelsRed.jpg"></div>
+                    <a onclick="showScarfNavy()" href="#">
+                      <div class="option"><img src="../assets/shop/Accessories/scarfNavy.jpg"></div>
                     </a>
-                    <a onclick="showWheelsWhite()" href="#">
-                      <div class="option"><img src="../assets/shop/Skate/wheelsWhite.jpg"></div>
+                    <a onclick="showScarfPink()" href="#">
+                      <div class="option"><img src="../assets/shop/Accessories/scarfPink.jpg"></div>
+                    </a>
+                    <a onclick="showScarfRed()" href="#">
+                      <div class="option"><img src="../assets/shop/Accessories/scarfRed.jpg"></div>
                     </a>
                   </div>
                 </div>
                 <br>
                 <div class="text">
-                  <h1>Supreme®/Spitfi﻿re® Cla﻿ssi﻿c Wheel﻿s</h1>
+                  <h1>Polar﻿te﻿c® Logo Sca﻿r﻿f</h1>
                   <br>
-                  <p>Classic Spitfire® wheels with custom Supreme art. Each size sold separately as a set of four wheels. 51mm & 53mm wheels are classic 99D hard urethane. 58mm wheel is an 80D soft cruiser. Made exclusively for Supreme.</p>
+                  <p>Polartec® 200 fleece scarf with embroidered logo and merrowed edge.</p>
                   <br>
-                  <h4>Price: £30</h4>
+                  <h4>Price: £42</h4>
                   <br>
                   <select id = "colours" onchange="setColor()">
-                    <option value=0>Red</option>
-                    <option value=1>Gold</option>
-                    <option value=2>White</option>
+                    <option value=0>Black</option>
+                    <option value=1>Navy</option>
+                    <option value=2>Pink</option>
+                    <option value=5>Red</option>
                   </select>
-                  <select id = "sizes">
-                    <option value=0>Size</option>
-                    <option value=1>51mm</option>
-                    <option value=2>53mm</option>
-                    <option value=3>58mm</option>
-                  </select>
-                  <button class="button" onclick="setSizes('Supreme®/Spitfi﻿re® Cla﻿ssi﻿c Wheel﻿s',30)">Add To Cart</button>
+                  <button class="button" onclick="addToCart()">Add To Cart</button>
                 </div>
                 <br>
 
