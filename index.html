@@ -1,79 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
-        <!--<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">-->
-        <link rel="icon" href="assets/icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="js/javascript.js"></script>
-        <script defer src="js/fontawesome-all.js"></script>
-        <title>Supreme</title>
-    </head>
-    <body onload="slideshow()">
-      <div class="site-container">
-        <div class="site-pusher">
-          <header class="header">
-              <a href="#" class="icon" id="icon"></a>
-              <div class="logo"><img alt="logo" id="logo" src="assets/logo.png"></div>
-              <nav class="menu">
-                  <a href="index.html">Home</a>
-                  <a href="about.html">About</a>
-                  <a href="gallery.html">Gallery</a>
-                  <a href="shop.html">Shop</a>
-                  <a href="log.html">Log</a>
-                  <a href="video.html">DEMO</a>
-              </nav>
-              <div class="cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></div>
-          </header>
-          <div class="container">
-            <section class="images">
-              <div class="center">
-                <div class= "imgcontain">
-                  <div class="slides fade">
-                    <div class = "numbertext">1/4</div>
-                    <img alt="image1" class="slidesimg" src="assets/gallery/photo2.jpg">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="assets/icon.png">
+<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/javascript.js"></script>
+<script defer src="js/fontawesome-all.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<title>James Cheek</title>
+</head>
+  <body>
+    <div class="site-container">
+      <div class="site-pusher">
+        <header>
+        <a href="#" class="icon" id="icon"></a>
+        <div class="logo">
+        <img alt="logo" id="logo" src="assets/logo.png">
+        </div>
+        <nav class="menu">
+        <a href="#top">Home</a>
+        <a href="#info">Info</a>
+        <a href="#form">Examples</a>
+        <a href="index.html">Gallery</a>
+        </nav>
+        <div class="socials">
+        <a href="https://www.facebook.com/jamescheek21"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/JamesCheek21"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/jxmesisdexd/"><i class="fab fa-instagram"></i></a>
+        </div>
+        </header>
+        <div class="banner" id="top">
+          <img class="bannerimg" src="https://www.wall-posters.site/wp-content/uploads/2018/03/black-and-white-splash-wallpaper-5592.jpeg"></img>
+          <div class="splashtext">
+            <p>The purpose of this website is to the demonstrate the different CSS elements that are commonly used in web design. The important thing to always keep in mind is sticking to
+              a theme; a theme is usually established in the design phase of making a webpage. A design phase includes sitemaps, wireframes, and moodboards. I will delve further into each part of
+              the design phase on this page.</p>
+          </div>
+        </div>
+        <div class="container" id="info">
+          <div class = "content">
+            <h1>Designing a Webpage</h1>
+            <h2>Sitemap</h2>
+            <p>A sitemap is a visual representation of how all your pages link together and where each page can take you to. This will include every link that is responsible for opening a
+              new page. Sitemap’s are important as it gives you some form of direction when making your site and ensures all pages are easily accessed when it comes to the final project.</p>
+
+            <h2>Moodboards</h2>
+            <p>Moodboards are a design technique for all the visual elements of a webpage. This includes pictures, a colour palette, buttons, fonts, text styles, logos etc. This helps your
+              webpage keep a unified look, making each page similar so the site has a theme that is recognisable to the user. Without a theme colours can clash, and one page could look like
+              it’s from a different site entirely.</p>
+
+            <h2>Wireframes</h2>
+            <p>Wireframes detail what each page will look like; which involves determining the box model of the page, details of sizes and styles. This is just a simple outline design as all
+              the details for the styles should be in the wireframes. Style details can include colours, font sizes, dimensions and many more. The way to tell if the wireframe is to a satisfactory
+              standard is to think about if it was given to another person to make the website from the wireframes; if they can make the website exactly as designed then the wireframe worked.</p>
+            <!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+            <div class="examples" id="form">
+              <h1>Examples</h1>
+              <div class="forms">
+                <h2>Forms</h2>
+                <div class="formcontainer">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
                   </div>
-                  <div class="slides fade">
-                    <div class = "numbertext">2/4</div>
-                    <img alt="image2" class="slidesimg" src="assets/gallery/photo1.jpg">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
                   </div>
-                  <div class="slides fade">
-                    <div class = "numbertext">3/4</div>
-                    <img alt="image3" class="slidesimg" src="assets/gallery/photo13.jpg">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                      </select>
+                    </div>
                   </div>
-                  <div class="slides fade">
-                    <div class = "numbertext">4/4</div>
-                    <img alt="image4" class="slidesimg" src="assets/gallery/photo7.jpg">
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
                   </div>
                 </div>
-                <br>
-                <a href="gallery.html" class="gallerylink">Go to Gallery -></a>
               </div>
-            </section>
-            <section class="info">
-              <div class= "centertext">
-                <p>In April 1994, Supreme opened its doors on Lafayette Street in downtown Manhattan and became the home of New York City skate culture. <br> At its core was the gang of rebellious young New York skaters and artists who became the store's staff, crew and customers. </p>
-                <p>Supreme grew to be the embodiment of the downtown culture, playing an integral part in its constant regeneration. Skaters, punks, hip-hop heads - the young counter culture at large - all gravitated towards Supreme. </p>
-                <p>While it grew into a downtown institution, Supreme established itself as a brand known for its quality, style and authenticity. </p>
-                <p>Over its eighteen year history, Supreme has worked with some of our generation's most groundbreaking designers, artists, photographers and musicians - all who have helped continue to define its unique identity and attitude.</p>
-                <br>
-                  <a class="aboutlink" href="about.html">Go to About-></a>
-                  <a class="shoplink" href="shop.html">Go to Shop -></a>
+              <div class="buttons">
+                <h2>Buttons</h2>
+                <div class = "buttoncontainer">
+                  <p><a class = "largebutton" href="#">Large Button</a></p>
+                  <br><br>
+                  <p><a class = "mediumbutton" href="#">Medium Button</a></p>
+                  <br><br>
+                  <p><a class = "smallbutton" href="#">Small Button</a></p>
+                </div>
               </div>
-            </section>
-            <section class="contact">
-              <div class="centertext">
-                <h1>Our UK Store</h1>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9932.053830368935!2d-0.1339622!3d51.5129691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x795276f5a4bce414!2sSupreme!5e0!3m2!1sen!2suk!4v1515611783066" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <p><i class="fa fa-phone" aria-hidden="true"></i> 020 07437 0493</p>
-                <p><i class="fa fa-globe" aria-hidden="true"></i><a href="http://www.supremenewyork.com/">supremenewyork.com</a></p>
-              </div>
-            </section>
-          </div> <!-- END container -->
-          <div class="site-cache" id="site-cache"></div>
-        </div> <!-- END site-pusher -->
-      </div> <!-- END site-container -->
-    </body>
+            </div>
+          </div>
+        </div> <!-- END container -->
+      <div class="site-cache" id="site-cache"></div>
+      </div> <!-- END site-pusher -->
+    </div> <!-- END site-container -->
+  </body>
 </html>
