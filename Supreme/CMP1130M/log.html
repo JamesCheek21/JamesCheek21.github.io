@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/styles.css">
+        <!--<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">-->
+        <link rel="icon" href="assets/icon.png">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <script defer src="js/fontawesome-all.js"></script>
+        <title>Supreme</title>
+    </head>
+    <body onload="slideshow()">
+      <div class="site-container">
+        <div class="site-pusher">
+          <header class="header">
+              <a href="#" class="icon" id="icon"></a>
+              <div class="logo"><img alt="logo" id="logo" src="assets/logo.png"></div>
+              <nav class="menu">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="shop.html">Shop</a>
+                  <a href="log.html">Log</a>
+                  <a href="video.html">DEMO</a>
+              </nav>
+              <div class="cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+          </header>
+          <div class="container">
+            <section class="about">
+              <div class= "centerinfo">
+                <h1>Web Specifications and Standards</h1>
+                <p>When implementing my site, I had to develop it using the new web standards; HTML5 and CSS3. These new standards were designed to make developing and accessing websites a smoother and easier experience in comparison to the previous iterations of these standards. Here I will evaluate the strengths and weaknesses of the current standards with the previous standards.</p>
+                <h3>HTML vs HTML5</h3>
+                <p>With the introduction of HTML5 came the introduction of new tags to implement into the code. This came as a replacement to the "div" tag, in order to clearly see the structure of the page inside the code. This included tags such section" and "aside" which then can later feature classes or ID’s for styling; meaning multiple pages can feature these tags and their own styling. Many more semantics were added as shown by this image below:</p>
+                <img src="logimgs/photo1.png" style="max-width:100%;">
+                <i>Source:<a href="https://blog.keycdn.com/blog/wp-content/uploads/2017/01/html5-features.webp">https://blog.keycdn.com/blog/wp-content/uploads/2017/01/html5-features.webp</a></i>
+                <p>Before HTML5, if any external sources for things such as audio, video etc. was to applied an external plug-in would be necessary. This is poor practice as the developer of the page won’t know how the plug in works themselves, therefore if there was an issue it would be harder to solve. It also means slower loading times as these plug ins would also have to be loaded into the page. Furthermore, some browsers may not support these plug-ins or may not allow them without user intervention, making interoperability difficult to accomplish.</p>
+                <br>
+                <p>With HTML5 also came error handling: this is for html code that may be malformed or slightly incorrect. This was developed as it was found that 90% of all webpages contain improper code (Arsenault, 2017). In result corrections to improper code was added in HTML5 as it was accepted HTML was too complicated to get completely correct. This made making pages was easier as it was more forgiving when there were slight errors.</p>
+                <p>With the increase in smartphones being used for browsing the web and accessing webpages an improvement to HTML was needed to make this more compatible with these devices that work slightly different to computers. HTML5 included mobile support in it’s release meaning users can access pages from any device with ease. (Arsenault, 2017)</p>
+                <p>HTML5 also introduced semantics such as the "canvas" tag. This canvas can be used in JavaScript and jQuery to draw to it primarily from the script, allowing for customisation to the page such as drawing and custom images. I implemented this in my site in the custom tshirt page.</p>
+                <h4>Examples in my Code</h4>
+                <h5>Section and Aside</h5>
+                <img src="logimgs/photo2.png" style="max-width:100%;">
+                <h5>Header</h5>
+                <img src="logimgs/photo3.png" style="max-width:100%;">
+                <h5>Drawing to Canvas</h5>
+                <img src="logimgs/photo4.png" style="max-width:100%;">
+                <h3>CSS vs CSS3</h3>
+                <p>As a new era of webpages came in an improvement to the previous CSS format was needed too. CSS3 soon became industry standard and what people would mean when referring to CSS. It came with many additions for each minor change a developer could ask for.</p>
+                <p>For example, pseudo classes were added to add specific changes to the minute details. This includes hovers, last-child of a group of items and many more. This was included to make adding styles to individual items without the need to encase them in separate divs, making the structure of the page and the CSS messy and difficult to interpret.</p>
+                <p>Also came introductions of more shapes rather than the simple squares, such as the ability to make rounded corners using ‘border-radius’. This made adding more of a stylistic design to elements of your page more accessible and simpler for developers.</p>
+                <p>On top of these changes, browser support was needed as not every browser has been developed with these new styling mechanics in mind. To accomplish this CSS3 introduced the inclusion of vendor prefixes; tags added to stylings that aren’t supported in browsers to make them work in those browsers. The browsers and their vendor prefixes are as followed: -moz- for Firefox, -webkit- for Safari and Google Chrome, -o- for opera, -ms- for Internet Explorer. However, as browsers are updated the need for these prefixes are becoming significantly less because of the popularity of these advanced functions (Shethna, 2016). This inclusion of vendor prefixes increased interoperability for the CSS stylings.</p>
+                <p>As mentioned previously in the analysis of HTML5, the use of mobile devices for accessing webpages as drastically increased in their inception. With this came the need for making the stylings of sites still apply in the unconventional screen resolutions. This launched the introduction of media queries; the ability to apply stylings exclusively at certain scenarios, such as screen width. With this feature the stylings of sites can be completely remodelled while keeping the same design and content of the page. Previously mobile exclusive sites would be developed with their own stylings, making this very inefficient.</p>
+                <h4>Examples in my Code</h4>
+                <h5>Vendor Prefixes, Rounded Corners and Box Shadows</h5>
+                <img src="logimgs/photo5.png" style="max-width:100%;">
+                <img src="logimgs/photo6.png" style="max-width:100%;">
+                <h5>Media Queries</h5>
+                <img src="logimgs/photo7.png" style="max-width:100%;">
+                <h5>Pseudo classes</h5>
+                <img src="logimgs/photo8.png" style="max-width:100%;">
+                <img src="logimgs/photo9.png" style="max-width:100%;">
+                <br>
+                <h1>Structure</h1>
+                <h3>Root Folder</h3>
+                <img src="logimgs/photo10.png" style="max-width:100%;">
+                <h3>Assets</h3>
+                <img src="logimgs/photo11.png" style="max-width:100%;">
+                <br>
+                <i>All folders inside contain images</i>
+                <h3>CSS</h3>
+                <img src="logimgs/photo12.png" style="max-width:100%;">
+                <h3>JS</h3>
+                <img src="logimgs/photo13.png" style="max-width:100%;">
+                <h3>Shopitems</h3>
+                <img src="logimgs/photo14.png" style="max-width:100%;">
+                <h1>W3C Validation</h1>
+                <h3>index.html</h3>
+                <img src="logimgs/photo15.png" style="max-width:100%;">
+                <h3>about.html</h3>
+                <img src="logimgs/photo16.png" style="max-width:100%;">
+                <h3>gallery.html</h3>
+                <img src="logimgs/photo17.png" style="max-width:100%;">
+                <h3>shop.html</h3>
+                <img src="logimgs/photo18.png" style="max-width:100%;">
+                <h3>cart.html</h3>
+                <img src="logimgs/photo19.png" style="max-width:100%;">
+                <h3>beanie.html (and all over items in the shop)</h3>
+                <img src="logimgs/photo20.png" style="max-width:100%;">
+                <h3>customiser.html</h3>
+                <img src="logimgs/photo21.png" style="max-width:100%;">
+                <h1>Interoperability</h1>
+                <p>This is to test my site in all browsers to see if it comes out as expected on each. As shown by my screenshots there is no differences between the browsers. The JavaScript and jQuery were also tested on all browsers and they all work as expected as shown by the cart page displaying the items in the local storage.</p>
+                <br>
+                <h3>index.html</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo22.png" style="max-width:100%;">
+                <img src="logimgs/photo23.png" style="max-width:100%;">
+                <img src="logimgs/photo64.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo24.png" style="max-width:100%;">
+                <img src="logimgs/photo25.png" style="max-width:100%;">
+                <img src="logimgs/photo26.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo27.png" style="max-width:100%;">
+                <img src="logimgs/photo28.png" style="max-width:100%;">
+                <img src="logimgs/photo29.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo30.png" style="max-width:100%;">
+                <img src="logimgs/photo31.png" style="max-width:100%;">
+                <img src="logimgs/photo65.png" style="max-width:100%;">
+                <h3>about.html</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo32.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo33.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo34.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo35.png" style="max-width:100%;">
+                <h3>gallery.html</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo36.png" style="max-width:100%;">
+                <img src="logimgs/photo37.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo38.png" style="max-width:100%;">
+                <img src="logimgs/photo39.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo40.png" style="max-width:100%;">
+                <img src="logimgs/photo41.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo42.png" style="max-width:100%;">
+                <img src="logimgs/photo43.png" style="max-width:100%;">
+                <h3>shop.html</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo44.png" style="max-width:100%;">
+                <img src="logimgs/photo45.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo46.png" style="max-width:100%;">
+                <img src="logimgs/photo47.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo48.png" style="max-width:100%;">
+                <img src="logimgs/photo49.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo50.png" style="max-width:100%;">
+                <img src="logimgs/photo51.png" style="max-width:100%;">
+                <h3>cart.html</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo52.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo53.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo54.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo55.png" style="max-width:100%;">
+                <h3>beanie.html (and all over items in the shop)</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo56.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo57.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo58.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo59.png" style="max-width:100%;">
+                <h3>customiser.html</h3>
+                <h4>Chrome</h4>
+                <img src="logimgs/photo60.png" style="max-width:100%;">
+                <h4>Firefox</h4>
+                <img src="logimgs/photo61.png" style="max-width:100%;">
+                <h4>Opera</h4>
+                <img src="logimgs/photo62.png" style="max-width:100%;">
+                <h4>Internet Explorer</h4>
+                <img src="logimgs/photo63.png" style="max-width:100%;">
+                <h1>Wireframes</h1>
+                <h3>index.html</h3>
+                <img src="logimgs/index.html.png" style="max-width:100%;">
+                <h3>about.html</h3>
+                <img src="logimgs/about.html.png" style="max-width:100%;">
+                <h3>gallery.html</h3>
+                <img src="logimgs/gallery.html.png" style="max-width:100%;">
+                <h3>shop.html</h3>
+                <img src="logimgs/shop.html.png" style="max-width:100%;">
+                <h3>cart.html</h3>
+                <img src="logimgs/cart.html.png" style="max-width:100%;">
+                <h3>item.html</h3>
+                <img src="logimgs/item.html.png" style="max-width:100%;">
+                <h3>customiser.html</h3>
+                <img src="logimgs/customiser.html.png" style="max-width:100%;">
+                <h1>Sitemap</h1>
+                <img src="logimgs/Sitemap.png" style="max-width:100%;">
+                <h1>Moodboards</h1>
+                <img src="logimgs/Moodboard1.png" style="max-width:100%">
+                <img src="logimgs/Moodboard2.png" style="max-width:100%">
+                <br>
+                <h1>References</h1>
+                <p>Arsenault, C., 2017. <i> HTML vs HTML5 – What’s the Difference?. </i> [Online] <p>
+                <p>Available at: <a href="https://www.keycdn.com/blog/html-vs-html5/">https://www.keycdn.com/blog/html-vs-html5/</a></p>
+                <p>[Accessed 21 12 2017].</p>
+                <br>
+                <p>Shethna, J., 2016. <i>CSS3 vs CSS - How Are They Different? (Inforgraph).</i> [Online] </p>
+                <p>Available at: <a href="https://www.educba.com/css3-vs-css/">https://www.educba.com/css3-vs-css/</a></p>
+                <p>[Accessed 21 12 2017].</p>
+                <p>Images used are from <a href="https://www.google.co.uk/"> https://www.google.co.uk/</a></p>
+
+
+              </div>
+            </section>
+          </div> <!-- END container -->
+          <div class="site-cache" id="site-cache"></div>
+        </div> <!-- END site-pusher -->
+      </div> <!-- END site-container -->
+    </body>
+</html>

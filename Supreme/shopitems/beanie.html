@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="../css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="icon" href="../assets/icon.png">
+        <link rel="stylesheet" type="text/css" href="https://www.jeasyui.com/easyui/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="https://www.jeasyui.com/easyui/themes/icon.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+        <script src="../js/javascript.js"></script>
+        <script defer src="../js/fontawesome-all.js"></script>
+        <title>Supreme</title>
+    </head>
+    <body>
+      <div class="site-container">
+        <div class="site-pusher">
+          <header class="header">
+              <a href="#" class="icon" id="icon"></a>
+              <div class="logo"><img alt="logo" id="logo" src="../assets/logo.png"></div>
+              <nav class="navmenu">
+                  <a href="../index.html">Home</a>
+                  <a href="../about.html">About</a>
+                  <a href="../gallery.html">Gallery</a>
+                  <a href="../shop.html">Shop</a>
+                  <a href="../log.html">Log</a>
+                  <a href="../video.html">DEMO</a>
+              </nav>
+              <div class="cart"><a href="../cart.html"><i class="fas fa-shopping-cart"></i></a></div>
+          </header>
+          <div class="container">
+            <section class="specificitem">
+              <div class= "shopitem">
+                <div class="itemimg">
+                  <img alt="beanie" id="beanieBlack" src="../assets/shop/Hats/beanieBlack.jpg" style="display: block;">
+                  <img alt="beanie" id="beanieOrange" src="../assets/shop/Hats/beanieOrange.jpg" style="display: none;">
+                  <img alt="beanie" id="beanieWhite" src="../assets/shop/Hats/beanieWhite.jpg" style="display: none;">
+                  <br>
+                  <br>
+                  <div class="colours">
+                    <a onclick="showBeanieBlack()" href="#">
+                      <div class="option"><img alt="beanie" src="../assets/shop/Hats/beanieBlack.jpg"></div>
+                    </a>
+                    <a onclick="showBeanieOrange()" href="#">
+                      <div class="option"><img alt="beanie" src="../assets/shop/Hats/beanieOrange.jpg"></div>
+                    </a>
+                    <a onclick="showBeanieWhite()" href="#">
+                      <div class="option"><img alt="beanie" src="../assets/shop/Hats/beanieWhite.jpg"></div>
+                    </a>
+                  </div>
+                </div>
+                <br>
+                <div class="text">
+                  <h1>Nepali Earflap Beanie</h1>
+                  <br>
+                  <br>
+                  <h4>Price: £34</h4>
+                  <br>
+                  <select id = "colours" onchange="setColor()">
+                    <option value=0>Black</option>
+                    <option value=1>Orange</option>
+                    <option value=2>White</option>
+                  </select>
+                  <button class="button" onclick="addToCart('Nepalie Earflap Beanie',34)">Add To Cart</button>
+                </div>
+              </div>
+            </section>
+          </div> <!-- END container -->
+          <div class="site-cache" id="site-cache"></div>
+        </div> <!-- END site-pusher -->
+      </div> <!-- END site-container -->
+    </body>
+</html>
