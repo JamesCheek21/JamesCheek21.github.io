@@ -19,6 +19,9 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
+    <!-- ionicons cdn -->
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+
     <!-- for on scroll animations -->
     <link rel="stylesheet" href="animate.css">
     <script src="wow.min.js"></script>
@@ -27,7 +30,7 @@
     <div class="wrapper">
       <nav>
         <span id="brand">
-          <a href="index.html"><i class="fas fa-times"></i> James Cheek</a>
+          <a href="index.html"><i class="fas fa-times"></i> james cheek</a>
         </span>
 
         <ul id="menu">
@@ -57,53 +60,67 @@
       <div class="container">
         <div class="hero-content">
           <br><br>
+
           <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-12">
+              <br>
 
-              <h3 class="wow fadeInUp" data-wow-delay="1s">say hello.</h3><br>
-              <p class="wow fadeInUp" data-wow-delay="1.2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, accusantium sint quod voluptatem dolorum, quaerat, ut iusto cumque magni ab repudiandae, quasi minus unde temporibus nulla eum eaque! Placeat praesentium sunt suscipit laboriosam deserunt commodi atque corporis, iure maiores dicta, fugit similique.</p>
+              <h1 class="wow fadeInUp" data-wow-delay="1s">Project Name</h1>
+              <br><br>
 
+              <div class="row">
+                <div class="rows col-lg-4">
+                  <p class="wow fadeInUp" data-wow-delay="1.2s">service: </p>
+                  <h6 class="wow fadeInUp" data-wow-delay="1.3s">Web Development</h6>
+                </div>
 
+                <div class="rows col-lg-4">
+                  <p class="wow fadeInUp" data-wow-delay="1.4s">started: </p>
+                  <h6 class="wow fadeInUp" data-wow-delay="1.5s">8th May 2019</h6>
+                </div>
+
+                <div class="rows col-lg-4">
+                  <p class="wow fadeInUp" data-wow-delay="1.6s">completed: </p>
+                  <h6 class="wow fadeInUp" data-wow-delay="1.7s">15th May 2019</h6>
+                </div>
+              </div>
+              <br>
+              <p class="wow fadeInUp" data-wow-delay="1.8s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rem placeat voluptates saepe incidunt cupiditate, asperiores aliquid itaque. Minus ratione, provident tenetur nobis aliquam commodi dignissimos dolores atque maiores laborum nulla minima tempore sequi impedit voluptates aliquid voluptatibus obcaecati dolore doloremque quaerat.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="whitespace"></div> -->
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-8">
-            <form name="contact-form" id="contact-form" method="post" action="">
-              <ul>
-                <li class="wow fadeInUp" data-wow-delay="1.4s">
-                  <label for="contact-name">Name :</label>
-                  <div class="textarea">
-                    <input type="text" name="contact-name" id="contact-name" value="" required>
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-email">Email :</label>
-                  <div class="textarea">
-                    <input type="email" name="contact-email" id="contact-email" value="" required>
-                  </div>
-                </li>
-
-                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                  <label for="contact-project">Message :</label>
-                  <div class="textarea">
-                    <textarea type="email" name="contact-project" id="contact-project" rows="6" value="" required>
-                    </textarea>
-                  </div>
-                </li>
-              </ul>
-
-              <button type="submit" name="contact-submit" class="send wow fadeInUp">Send Message</button>
-            </form>
+      <div class="project-img">
+        <div class="container">
+          <br><br>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="project image wow fadeInUp"data-wow-delay="0.8s"></div>
+            </div>
+            <div class="col-md-4">
+              <div class="project image wow fadeInUp"data-wow-delay="0.8s"></div>
+            </div>
           </div>
         </div>
       </div>
+
+      <br><br>
+
+      <div class="project nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 prev">
+              <p><ion-icon name="arrow-back"></ion-icon>previous</p>
+            </div>
+            <div class="col-lg-6 next">
+              <p><ion-icon name="arrow-forward"></ion-icon>next</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="whitespace"></div>
 
       <div class="footer">
         <div class="container">
@@ -189,3 +206,4 @@
     new WOW().init();
     </script>
   </body>
+</html>
