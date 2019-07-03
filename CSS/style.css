@@ -24,12 +24,25 @@ html, body{
   border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .anim-typewriter{
-  animation: typewriter 2.5s steps(40) 1s 1 normal both,
+  -webkit-animation: typewriter 2.5s steps(40) 1s 1 normal both,
   blinkTextCursor 500ms steps(40) infinite normal;
+          animation: typewriter 2.5s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 14em;
+  }
 }
 
 @keyframes typewriter {
@@ -37,19 +50,36 @@ html, body{
     width: 0;
   }
   to {
-    width: 6.2em;
+    width: 14em;
   }
 }
-/* @media(max-width:768px) {
+@media(max-width:768px) {
+  @-webkit-keyframes typewriter{
+    from{
+      width: 0;
+    }
+    to{
+      width: 13.5em;
+    }
+  }
   @keyframes typewriter{
     from{
       width: 0;
     }
     to{
-      width: 17em;
+      width: 13.5em;
     }
   }
-} */
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from{
+    border-right-color: rgba(255, 255,255,0.75);
+  }
+  to{
+    border-right-color: transparent;
+  }
+}
 
 @keyframes blinkTextCursor {
   from{
@@ -75,6 +105,8 @@ html, body{
  }
  nav #brand a {
    color: #fff;
+   -webkit-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
  }
  nav #brand a:hover{
@@ -94,6 +126,8 @@ html, body{
    font-weight: 300;
    line-height: 80px;
    position: relative;
+   -webkit-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
  }
 
@@ -118,6 +152,8 @@ html, body{
    height: 30px;
    cursor: pointer;
    float: right;
+   -webkit-transition: all 0.3s ease-out;
+   -o-transition: all 0.3s ease-out;
    transition: all 0.3s ease-out;
    visibility: hidden;
    opacity:0;
@@ -142,6 +178,8 @@ html, body{
    height: 100%;
    visibility: hidden;
    opacity: 0;
+   -webkit-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
    transition: all 1s ease-out;
  }
 
@@ -149,7 +187,9 @@ html, body{
   height: 90px;
   position: absolute;
   left: 45%;
-  transform: translateX(-40%);
+  -webkit-transform: translateX(-40%);
+      -ms-transform: translateX(-40%);
+          transform: translateX(-40%);
   text-align: center;
   display: table-cell;
   vertical-align: center;
@@ -162,6 +202,8 @@ html, body{
   min-height: 50px;
   font-weight: bold;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -210,9 +252,15 @@ html, body{
 
 .hero {
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .hero h1{
   font-weight: lighter;
@@ -221,11 +269,11 @@ html, body{
   line-height: 58px;
 }
 
-/* @media(max-width:768px) {
+@media(max-width:768px) {
   .header h1{
     font-size: 26px;
   }
-} */
+}
 
 .scroll-down{
   position: absolute;;
@@ -240,19 +288,39 @@ html, body{
   height: 13px;
   border-bottom: 2px solid #fff;
   border-right: 2px solid #fff;
-  transform: translate(-50%, 0) rotate(45deg);
-  animation: fade_move_down 3s cubic-bezier(0.19,1, 0.22, 1) infinite;
+  -webkit-transform: translate(-50%, 0) rotate(45deg);
+      -ms-transform: translate(-50%, 0) rotate(45deg);
+          transform: translate(-50%, 0) rotate(45deg);
+  -webkit-animation: fade_move_down 3s cubic-bezier(0.19,1, 0.22, 1) infinite;
+          animation: fade_move_down 3s cubic-bezier(0.19,1, 0.22, 1) infinite;
 }
-@keyframes fade_move_down{
+@-webkit-keyframes fade_move_down{
   0%{
-    transform: translate(0, -20px), rotate(45deg);
+    -webkit-transform: translate(0, -20px), rotate(45deg);
+            transform: translate(0, -20px), rotate(45deg);
     opacity: 0;
   }
   50%{
     opacity: 1;
   }
   100%{
-    transform: translate(0, 20px) rotate(45deg);
+    -webkit-transform: translate(0, 20px) rotate(45deg);
+            transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+}
+@keyframes fade_move_down{
+  0%{
+    -webkit-transform: translate(0, -20px), rotate(45deg);
+            transform: translate(0, -20px), rotate(45deg);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    -webkit-transform: translate(0, 20px) rotate(45deg);
+            transform: translate(0, 20px) rotate(45deg);
     opacity: 0;
   }
 }
@@ -277,7 +345,7 @@ h6{
 }
 
 .project1::after{
-  content: "timeless flow";
+  content: "timeless flow.";
   font-family: "Roboto Mono";
   font-size:36px;
   position: relative;
