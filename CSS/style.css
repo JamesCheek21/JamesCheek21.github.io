@@ -113,7 +113,7 @@ html, body{
    text-decoration: none;
  }
 
- nav#menu {
+ nav #menu {
    float: left;
    right: 80px;
    position: fixed;
