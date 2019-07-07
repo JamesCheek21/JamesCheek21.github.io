@@ -7,13 +7,17 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/styles2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <!-- bootstrap cdns -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- start of wrapper !-->
     <div class="wrapper">
+
+      <!-- start of nav !-->
       <nav>
         <a href="index.html"><span id="brand"><img src="assets/supreme.svg" alt="logo"></span></a>
 
@@ -39,7 +43,9 @@
         </ul>
       </div>
       </nav>
+      <!-- end of nav !-->
     </div>
+    <!-- end of wrapper !-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
@@ -60,6 +66,16 @@
       $(this).toggleClass('on');
       $("#resize").toggleClass("active");
     });
+    TweenMax.from("#brand", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+    TweenMax.staggerFrom("#menu li a", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    }, 0.1);
 
     new WOW().init();
     </script>
