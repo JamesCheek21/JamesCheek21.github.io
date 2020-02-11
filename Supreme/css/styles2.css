@@ -151,6 +151,14 @@ nav #menu li a:hover {
  visibility: visible;
  opacity: 1;
 }
+
+.homegall{
+  height: 700px;
+  position: relative;
+}
+.gallimg{
+  height: 100%;
+}
 @media(max-width: 768px) {
   #toggle {
     visibility: visible;

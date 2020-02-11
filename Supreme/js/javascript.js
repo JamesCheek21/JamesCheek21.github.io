@@ -1,5 +1,12 @@
 //hamburger menu
 $(document).ready(function(){
+	$('.homegall').slick({
+		lazyLoad:'ondemand',
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
 	$('#icon').click(function(e){
 		e.preventDefault();
 		$('body').toggleClass('with--sidebar');
