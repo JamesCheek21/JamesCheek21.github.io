@@ -152,12 +152,18 @@ nav #menu li a:hover {
  opacity: 1;
 }
 
-.homegall{
-  height: 700px;
-  position: relative;
+.slider{
+  position: absolute;
+  height: 300px;
+  overflow: hidden;
+  margin: auto;
 }
-.gallimg{
-  height: 100%;
+.slides{
+  width: 2400px;
+  display: flex;
+}
+.slide{
+  display: none;
 }
 @media(max-width: 768px) {
   #toggle {
