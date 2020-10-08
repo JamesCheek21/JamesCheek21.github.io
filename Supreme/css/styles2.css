@@ -187,3 +187,11 @@ nav #menu li a:hover {
     visibility: hidden !important;
   }
 }
+
+.slcard{
+  width: 200px;
+  height: 650px;
+  padding: 20px 0;
+  vertical-align: bottom;
+  background-color: red;
+}
