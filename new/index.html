@@ -18,6 +18,8 @@
 
     <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
     <!--javascript-->
     <script type="text/javascript" src="js/javascript.js"></script>
   </head>
@@ -26,17 +28,17 @@
     <nav class="nav-bar">
       <div class="inner-width">
         <!--logo-->
-        <a href="/"class=logo></a>
+        <a href="index.html"class=logo></a>
         <button class="menu-toggler">
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div class="navbar-menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Work</a>
-          <a href="#">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -49,33 +51,84 @@
           <h1>Style is a Priority</h1>
         </div>
       </div><!--end of row-->
-      <section id="websites">
-        <div class="row">
-          <div class="inner-width">
-            <h1 class="section-title">Websites</h1>
-            <div class="works">
-              <a href="jasonbradbury.com" class="work">
-                <img src="assets/jasonbradbury.png" alt="">
-                <div class="caption">
-                  <h4>Jason Bradbury's Website</h4>
+      <div id="about">
+        <section>
+          <div class="row">
+            <div class="inner-width">
+              <h1 class="section-title">About Me</h1>
+              <div class="bio">
+                <p>A Masters by Research student in Computer Science, an experienced web developer and an aspiring model. Has studied web design for 5 years with one professional job as well as a multitude of projects for education and proof of concepts. 3 years experience doing amateur modelling, including shoots for 2 clothing companies and 3 personal shoots. Find below examples of both website work and modelling work. <br> To get in contact, use the social links below or the contact form below the work examples.</p>
+                <br>
+                <div class="socials">
+                  <a href="facebook.com/jamescheek21"><i class="fab fa-facebook-square"></i></a> <a href="twitter.com/jamescheek21"><i class="fab fa-twitter"></i></a> <a href="instagram.com/jxmesisdexd"><i class="fab fa-instagram"></i></a> 
                 </div>
-              </a>
-              <a href="../Supreme" class="work">
-                <img src="assets/clothing.png" alt="">
-                <div class="caption">
-                  <h4>Clothing Brand Proof of Concept</h4>
-                </div>
-              </a>
-              <a href="assets/3.png" class="work">
-                <img src="assets/swanhub.png" alt="">
-                <div class="caption">
-                  <h4>Social Media Undergrad Project</h4>
-                </div>
-              </a>
+              </div>
             </div>
           </div>
-        </div><!--end of row-->
-      </section>
+        </section>
+      </div>
+      <div id="work">
+        <section id="websites">
+          <div class="row">
+            <div class="inner-width">
+              <h1 class="section-title">Websites</h1>
+              <div class="works">
+                <a href="jasonbradbury.com" class="work website">
+                  <img src="assets/jasonbradbury.png" alt="">
+                  <div class="caption">
+                    <h4>Jason Bradbury's Website</h4>
+                  </div>
+                </a>
+                <a href="../Supreme" class="work website">
+                  <img src="assets/clothing.png" alt="">
+                  <div class="caption">
+                    <h4>Clothing Brand Proof of Concept</h4>
+                  </div>
+                </a>
+              </div><!--end of works-->
+            </div><!--end of inner-width-->
+          </div><!--end of row-->
+        </section>
+        <section id="modelling">
+          <div class="row">
+            <div class="inner-width">
+              <h1 class="section-title">Modelling</h1>
+              <div class="works">
+                <a href="macky.html" class="work modelling">
+                  <img src="assets/Macky/1.jpg" alt="">
+                  <div class="caption">
+                    <h4>Profile Shoot September 2020</h4>
+                  </div>
+                </a>
+                <a href="kirsty.html" class="work modelling">
+                  <img src="assets/Kirsty/7.jpg" alt="">
+                  <div class="caption">
+                    <h4>Streetwear Shoot September 2020</h4>
+                  </div>
+                </a>
+                <a href="sadboy.html" class="work modelling">
+                  <img src="assets/Sadboys/3.jpg" alt="">
+                  <div class="caption">
+                    <h4>Sadboy Clothing Shoot March 2020</h4>
+                  </div>
+                </a>
+                <a href="liam.html" class="work modelling">
+                  <img src="assets/Liam/6.jpg" alt="">
+                  <div class="caption">
+                    <h4>Streetwear Shoot September 2019</h4>
+                  </div>
+                </a>
+                <a href="thursday.html" class="work modelling">
+                  <img src="assets/Thursday/5.jpg" alt="">
+                  <div class="caption">
+                    <h4>Thursday Clothing Shoot March 2019</h4>
+                  </div>
+                </a>
+              </div><!--end of works-->
+            </div><!--end of inner-width-->
+          </div><!--end of row-->
+        </section>
+      </div>
     </div><!--end of container-->
   </body>
 </html>
