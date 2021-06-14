@@ -299,18 +299,15 @@ textarea:focus {
 }
 
 /* modelling pages */
-.section-title a{
+.section-title a {
   color: inherit;
 }
+
 .kirsty {
   flex: 33%;
 }
 
 .liam {
-  flex: 25%;
-}
-
-.sophie {
   flex: 25%;
 }
 
