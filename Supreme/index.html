@@ -5,15 +5,18 @@
   <meta charset="utf-8">
   <title>Supreme</title>
 
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <!-- stylesheet -->
   <link rel="stylesheet" href="css/styles2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <!--<script src="js/javascript.js"></script>
   <!-- bootstrap cdns -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--<script src="js/javascript.js"></script> -->
 </head>
 
 <body>
@@ -24,6 +27,7 @@
     <nav>
       <a href="index.html"><span id="brand"><img src="assets/supreme.svg" alt="logo"></span></a>
     </nav>
+    <!-- end of nav -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
@@ -42,34 +46,18 @@
                   <img src="assets/6.jpg" alt="">
                   <div class="bottom-right">Upcoming</div>
                 </a>
-                <!--<a href="assets/5.jpg" class="image">
-                  <img src="assets/5.jpg" alt="">
-                </a>
-                <a href="assets/6.jpg" class="image">
-                  <img src="assets/6.jpg" alt="">
-                </a>
-                <a href="assets/7.jpg" class="image">
-                  <img src="assets/7.jpg" alt="">
-                </a>
-                <a href="assets/8.jpg" class="image">
-                  <img src="assets/8.jpg" alt="">
-                </a>
-
-                <a href="assets/9.jpg" class="image">
-                  <img src="assets/9.jpg" alt="">
-                </a>
-                <a href="assets/10.jpg" class="image">
-                  <img src="assets/10.jpg" alt="">
-                </a>
-                <a href="assets/11.jpg" class="image">
-                  <img src="assets/11.jpg" alt="">
-                </a>-->
               </div>
+              <!-- end of gallery -->
             </div>
+            <!-- end of inner width -->
           </div>
+          <!-- end of gallery section -->
         </div>
+        <!-- end of column -->
       </div>
+      <!-- end of row -->
     </div>
+    <!-- end of container -->
   </div>
   <!-- end of wrapper !-->
 
@@ -80,19 +68,18 @@
   <script type="text/javascript" src="js/slick/slick.min.js"></script>
 
   <script type="text/javascript">
-  TweenMax.from("nav", 1, {
-    delay: 0.4,
-    opacity: 0,
-    ease: Expo.easeInOut
-  })
-  TweenMax.from("#brand", 2, {
-    delay: 0.4,
-    opacity: 0,
-    ease: Expo.easeInOut
-  });
+    TweenMax.from("nav", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+    TweenMax.from("#brand", 2, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
 
     new WOW().init();
-
   </script>
 </body>
 
