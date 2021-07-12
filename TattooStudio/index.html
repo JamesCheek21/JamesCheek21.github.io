@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name ="viewport" content="width=device-width, intitial-scale=1.0">
+  <meta name="viewport" content="width=device-width, intitial-scale=1.0">
   <title>Tattoo Studio</title>
 
   <!-- stylesheet -->
@@ -16,28 +16,25 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
-  <!-- start of wrapper !-->
   <div class="wrapper">
-
-    <!-- start of nav !-->
     <nav>
       <a href="index.html"><span id="brand"><img src="assets/logo.png" alt="logo"></span></a>
-
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="artistslct.html">Artists</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="reviews.html">Reviews</a></li>
       </ul>
-
       <div id="toggle">
         <div class="span"><i class="fas fa-bars"></i></div>
       </div>
     </nav>
+    <!-- end of nav -->
     <div id="resize">
       <div class="close-btn">Close</div>
 
@@ -48,6 +45,7 @@
         <li><a href="reviews.html">Reviews</a></li>
       </ul>
     </div>
+    <!-- end of mobile nav -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-1">
@@ -83,15 +81,22 @@
                   <img src="assets/img.jpg" alt="">
                 </a>
               </div>
+              <!-- end of gallery -->
             </div>
+            <!-- end of inner-width -->
           </div>
+          <!-- end of gallery-section -->
         </div>
+        <!-- end of column -->
         <div class="col-lg-1">
         </div>
+        <!-- end of column -->
       </div>
+      <!-- end of row -->
       <div class="row">
         <div class="col-lg-1">
         </div>
+        <!-- end of column -->
         <div class="col-lg-10">
           <div class="artists-section">
             <div class="inner-width">
@@ -103,27 +108,33 @@
                   <div class="a-name">Full Name</div>
                   <div class="a-job">Tattooist/Owner</div>
                 </a>
-                <div class="artist">
+                <a class="artist" href="artist.html">
                   <img src="assets/profile.jpg" alt="">
                   <div class="a-name">Full Name</div>
                   <div class="a-job">Tattooist</div>
-                </div>
-                <div class="artist">
+                </a>
+                <a class="artist" href="artist.html">
                   <img src="assets/profile.jpg" alt="">
                   <div class="a-name">Full Name</div>
                   <div class="a-job">Tattooist</div>
-                </div>
-                </div>
+                </a>
               </div>
+              <!-- end of artists -->
             </div>
+            <!-- end of inner-width -->
           </div>
+          <!-- end of artists-section -->
         </div>
+        <!-- end of column -->
         <div class="col-lg-1">
         </div>
+        <!-- end of column -->
       </div>
+      <!-- end of row -->
       <div class="row">
         <div class="col-lg-1">
         </div>
+        <!-- end of column -->
         <div class="col-lg-10">
           <div class="gallery-section">
             <div class="inner-width">
@@ -131,12 +142,18 @@
               <div class="border"></div>
               <iframe class="map" src="https://www.google.com/maps/embed" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
+            <!-- end of inner-width -->
           </div>
+          <!-- ed of gallery-section -->
         </div>
+        <!-- end of column -->
         <div class="col-lg-1">
         </div>
+        <!-- end of column -->
       </div>
+      <!-- end of row -->
     </div>
+    <!-- end of container -->
   </div>
   <!-- end of wrapper !-->
 
@@ -148,13 +165,13 @@
   <script type="text/javascript" src="js/slick/slick.min.js"></script>
 
   <script type="text/javascript">
-  $(".gallery").magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    gallery:{
-      enabled: true
-    }
-  });
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
     $("#toggle").click(function() {
       $(this).toggleClass('on');
       $("#resize").toggleClass("active");

@@ -8,20 +8,8 @@ html, body{
   color: #0f0f0f !important;
   box-sizing: border-box;
 }
-.whitespace{
-  width: 100%;
-  height: 100px;
-}
-@media(max-width: 768px) {
-  .whitespace{
-    display: none;
-  }
 
-  .map{
-    width: 100%;
-  }
-}
-
+/* navbar */
 nav{
   width: 100%;
   background: #fff;
@@ -155,20 +143,89 @@ nav #menu li a:hover {
  opacity: 1;
 }
 
-.slider{
-  position: absolute;
-  height: 300px;
-  overflow: hidden;
+/* gallery */
+.gallery-section{
+  width:100%;
+  padding: 20px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 20px;
 }
-.slides{
-  width: 2400px;
+.gallery-section h1, .artists-section h1{
+  text-align: center;
+  text-transform: uppercase;
+}
+.gallery{
+  padding-top: 10px;
+}
+.gallery-section .gallery, .artists-section .artists{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.slide{
-  display: none;
+
+.gallery-section .image{
+  flex: 25%;
+  overflow: hidden;
+  padding: 10px;
 }
-@media(max-width: 768px) {
+.gallery-section .image img{
+  width: 100%;
+  height: 100%;
+  transition: : 0.4s;
+}
+
+/* artists */
+.artists-section{
+  text-align: center;
+  padding: 20px 0;
+}
+.artist{
+  float:left;
+  width: 30%;
+  overflow: hidden;
+  padding: 20px 20px;
+  margin: 0px 10px;
+  color: #0f0f0f;
+}
+.artist:hover{
+  text-decoration: none;
+  background-color: #0f0f0f;
+  color: #fff;
+  transition: 0.6s;
+}
+.artist img{
+  width: 100%;
+  height: auto;
+}
+.a-name{
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+.artistdesc{
+  padding: 20px;
+}
+
+/* map */
+.map{
+  height: 500px;
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* media queries */
+@media screen and (max-width:960px) {
+  .gallery-section .image{
+    flex: 33.33%;
+  }
+
+}
+@media screen and (max-width:768px) {
   #toggle {
     visibility: visible;
     opacity: 1;
@@ -193,58 +250,6 @@ nav #menu li a:hover {
   .map {
     width: 100%;
   }
-
-}
-@media(min-width: 768px){
-  #resize {
-    visibility: hidden !important;
-  }
-
-  .map{
-    width: 80%;
-  }
-}
-
-.gallery-section{
-  width:100%;
-  padding: 20px 0;
-}
-.inner-width{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-.gallery-section h1{
-  text-align: center;
-  text-transform: uppercase;
-}
-.gallery{
-  padding-top: 10px;
-}
-.gallery-section .gallery{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery-section .image{
-  flex: 25%;
-  overflow: hidden;
-  padding: 10px;
-}
-.gallery-section .image img{
-  width: 100%;
-  height: 100%;
-  transition: : 0.4s;
-}
-@media screen and (max-width:960px) {
-  .gallery-section .image{
-    flex: 33.33%;
-  }
-
-}
-@media screen and (max-width:768px) {
   .gallery-section .image{
     flex: 50%;
   }
@@ -255,49 +260,11 @@ nav #menu li a:hover {
     flex: 100%;
   }
 }
-
-.artists-section{
-  text-align: center;
-  padding: 20px 0;
-}
-.artists-section .artists{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.artists-section h1{
-  text-align: center;
-  text-transform: uppercase;
-}
-.artist{
-  float:left;
-  width: 30%;
-  overflow: hidden;
-  padding: 20px 0;
-  margin: 0px 10px;
-  color: #0f0f0f;
-}
-.artist:hover{
-  text-decoration: none;
-  background-color: #0f0f0f;
-  color: #fff;
-  transition: 0.6s;
-}
-.artist img{
-  width: 100%;
-  height: auto;
-}
-.a-name{
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-.artistdesc{
-  padding: 20px;
-}
-.map{
-  height: 500px;
-  padding-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+@media(min-width: 768px){
+  #resize {
+    visibility: hidden !important;
+  }
+  .map{
+    width: 80%;
+  }
 }

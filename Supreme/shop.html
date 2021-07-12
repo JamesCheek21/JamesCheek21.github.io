@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Supreme</title>
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <!-- bootstrap cdns -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/styles2.css">
+  <!--<script src="js/javascript.js"></script> -->
+</head>
+
+<body>
+  <!-- start of wrapper !-->
+  <div class="wrapper">
+
+    <!-- start of nav !-->
+    <nav class="shopnav">
+
+      <a href="index.html"><span id="brand"><img src="assets/supreme.svg" alt="logo"></span></a>
+    </nav>
+    <!-- end of nav -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="shop-section">
+            <div class="inner-width" id="shop-iw">
+              <div class="selection" id="shop">
+                <a href="shop/1.html" class="item">
+                  <img src="assets/shop/1/1.jpg" alt="">
+                  <div class="item-name">Supreme®/Mortal Kombat by Arcade1UP</div>
+                  <div class="price">£628</div>
+                </a>
+                <a href="shop/3.html" class="item">
+                  <img src="assets/shop/3/3.jpg" alt="">
+                  <div class="item-name">Tech Trooper</div>
+                  <div class="price">£68</div>
+                </a>
+                <a href="shop/4.html" class="item">
+                  <img src="assets/shop/4/4.jpg" alt="">
+                  <div class="item-name">Supreme®/The North Face® Faux Fur Nuptse Jacket</div>
+                  <div class="price">£528</div>
+                </a>
+                <a href="shop/5.html" class="item">
+                  <img src="assets/shop/5/5.jpg" alt="">
+                  <div class="item-name">Kevlar™ Camp Cap</div>
+                  <div class="price">£50</div>
+                </a>
+                <a href="shop/6.html" class="item">
+                  <img src="assets/shop/6/6.jpg" alt="">
+                  <div class="item-name">Double Logo Facemask Beanie</div>
+                  <div class="price">£36</div>
+                </a>
+                <a href="shop/7.html" class="item">
+                  <img src="assets/shop/7/7.jpg" alt="">
+                  <div class="item-name">Supreme®/The North Face® Faux Fur Backpack</div>
+                  <div class="price">£188</div>
+                </a>
+                <a href="shop/8.html" class="item">
+                  <img src="assets/shop/8/8.jpg" alt="">
+                  <div class="item-name">Quilted Flannel Shirt</div>
+                  <div class="price">£128</div>
+                </a>
+                <a href="shop/9.html" class="item">
+                  <img src="assets/shop/9/9.jpg" alt="">
+                  <div class="item-name">Supreme®/The North Face® Faux Fur Waist Bag</div>
+                  <div class="price">£98</div>
+                </a>
+                <a href="shop/10.html" class="item">
+                  <img src="assets/shop/10/10.jpg" alt="">
+                  <div class="item-name">Globe Zip Up Hooded Sweatshirt</div>
+                  <div class="price">£168</div>
+                </a>
+                <a href="shop/11.html" class="item">
+                  <img src="assets/shop/11/11.jpg" alt="">
+                  <div class="item-name">Script Logos 6-Panel</div>
+                  <div class="price">£46</div>
+                </a>
+                <a href="shop/12.html" class="item">
+                  <img src="assets/shop/12/12.jpg" alt="">
+                  <div class="item-name">Stripe Velour Half Zip Pullover</div>
+                  <div class="price">£108</div>
+                </a>
+                <a href="shop/13.html" class="item">
+                  <img src="assets/shop/13/13.jpg" alt="">
+                  <div class="item-name">Overprint Crewneck</div>
+                  <div class="price">£148</div>
+                </a>
+              </div>
+              <!-- end of selection -->
+            </div>
+            <!-- end of inner width -->
+          </div>
+          <!-- end of selection section -->
+        </div>
+        <!-- end of column -->
+      </div>
+      <!-- end of row -->
+      <footer class="footer">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </footer>
+    </div>
+    <!-- end of container -->
+  </div>
+  <!-- end of wrapper !-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.1.0.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    TweenMax.from("nav", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    })
+    TweenMax.staggerFrom(".item", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut,
+      stagger: 0.05
+    })
+    TweenMax.from("footer", 1, {
+      delay: 0.4,
+      opacity: 0,
+      ease: Expo.easeInOut
+    });
+
+    new WOW().init();
+  </script>
+
+</body>
+
+</html>
